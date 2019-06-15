@@ -1,0 +1,18 @@
+package com.pawan.demo;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Component
+public class HomeController {
+	
+	@RequestMapping("home") // DISPATCHER SERVLET RUNS BEHIND THE SCENE , WE DONT HAVE TO DO THAT NO WEB.XML FILE
+	//@ResponseBody
+	public String home()
+	{
+		System.out.println("hello world");
+		return "home.jsp";
+		//return;
+	}
+}

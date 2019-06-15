@@ -1,0 +1,9 @@
+package com.pawan.demo;
+
+public class laptop {
+private int lid;
+private String lbrand;
+
+
+
+}

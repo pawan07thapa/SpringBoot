@@ -1,0 +1,10 @@
+package com.pawan.demo;
+
+public class Alien {
+
+	private String aname;
+	private int aid;
+	private String tech;
+	
+	
+}

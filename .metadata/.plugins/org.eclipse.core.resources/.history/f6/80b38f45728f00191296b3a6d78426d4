@@ -1,0 +1,16 @@
+package com.pawan.demo;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Component
+public class HomeController {
+	
+	@RequestMapping("home")
+	public void home()
+	{
+		System.out.println("hello world");
+		//return "home.jsp";
+		return;
+	}
+}

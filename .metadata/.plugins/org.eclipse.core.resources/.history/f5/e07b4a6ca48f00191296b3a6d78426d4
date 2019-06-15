@@ -26,7 +26,7 @@ public class HomeController {
 		return "home";
 		//return;
 	}
-	
+	**/
 	
 //	WORKING WITH MODEL AND VIEW
 	@RequestMapping("home")
@@ -41,19 +41,6 @@ public class HomeController {
 		return mv;
 		//return;
 	}
-  **/
-	@RequestMapping("home")
-	//WHEN THERE ARE MULTIPLE PROPERTIES TO BE SET IT WOULD BE BETTER TO USE AN OBJECT AND PASS THAT OBJECT
-	public ModelAndView home(Alien alien ) 
-	{
-		ModelAndView mv= new ModelAndView();
-		
-		mv.addObject("obj", alien); // DATA IS SEND IN THE FORM OF A MODEL
-		mv.setViewName("home");// AND THE RECIEVED DATA IS VIEWED IN A VIEW  
-		//sess.setAttribute("name" , Myname);  // this much would work sess does dependency injection and creates a Httpsession object
-		return mv;
-		//return;
-	}
-	
+  
 		
 }

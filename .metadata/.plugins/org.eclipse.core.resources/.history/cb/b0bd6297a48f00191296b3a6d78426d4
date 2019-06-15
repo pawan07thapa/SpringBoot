@@ -48,7 +48,7 @@ public class HomeController {
 	{
 		ModelAndView mv= new ModelAndView();
 		
-		mv.addObject("obj", alien); // DATA IS SEND IN THE FORM OF A MODEL
+		mv.addObject("name", alien); // DATA IS SEND IN THE FORM OF A MODEL
 		mv.setViewName("home");// AND THE RECIEVED DATA IS VIEWED IN A VIEW  
 		//sess.setAttribute("name" , Myname);  // this much would work sess does dependency injection and creates a Httpsession object
 		return mv;

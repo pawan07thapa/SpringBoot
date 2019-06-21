@@ -3,12 +3,13 @@ package com.pawan.demo.dao;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import com.pawan.demo.model.Alien;
 // TO SAVE DATA INTO DATABASE
-public interface AlienRepo extends CrudRepository<Alien, Integer> {
+public interface AlienRepo extends JpaRepository<Alien, Integer> {
 
 	//Naminig convention should be followed
 	List<Alien> findByTech(String ntech);

@@ -26,7 +26,7 @@ public class HomeController {
 		return "home";
 		//return;
 	}
-	
+
 	
 //	WORKING WITH MODEL AND VIEW
 	@RequestMapping("home")

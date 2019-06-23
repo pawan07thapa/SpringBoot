@@ -127,7 +127,7 @@ public class AlienController {
 		return "Deleted";
 	}
 	
-	@PutMapping(path="/alien" )
+	@PutMapping(path="/alien " )
 	public String saveOrUpdate(@RequestBody Alien alien)
 	{
 		repo.save(alien);
